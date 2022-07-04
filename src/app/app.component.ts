@@ -1,10 +1,10 @@
-import { Component } from '@angular/core';
+import { Component, OnDestroy } from '@angular/core';
 
 @Component({
   selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.scss']
+  styleUrls: ['app.component.scss'],
+  template: ` <div>Hello Ultimate Angular!</div> `,
 })
 export class AppComponent {
-  title = 'angular-pro-app';
+  constructor() {}
 }
