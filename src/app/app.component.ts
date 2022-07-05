@@ -1,10 +1,14 @@
-import { Component, OnDestroy } from '@angular/core';
+import { Component, OnDestroy, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-root',
   styleUrls: ['app.component.scss'],
-  template: ` <div>Hello Ultimate Angular!</div> `,
+  templateUrl: 'app.component.html',
 })
-export class AppComponent {
+export class AppComponent implements OnInit {
   constructor() {}
+
+  ngOnInit(): void {
+    console.log('Firebase deploy Consolelog');
+  }
 }
